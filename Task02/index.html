@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task02</title>
+
+
+    <script type="text/javascript">
+        function AlertFun() {
+
+        let text = "this is an alert";
+        alert(text);
+
+        }
+        </script>
+
+
+    <script type="text/javascript">
+        function BGChange(color) {
+
+        document.body.style.background = color;
+
+        }
+        </script>
+
+
+    <script type="text/javascript">
+        function TextChange() {
+
+        document.getElementById("text1").innerHTML = "Text Is Changed";
+        document.getElementById("text1").style.color = "red";
+
+        }
+        </script>
+
+        <script>
+function myFunction() {
+  var number = prompt("Please enter your name");
+  var numInt = parseInt(number);
+  result = numInt + 10;
+  if (number != null) {
+    document.getElementById("num1").innerHTML = result;
+  }
+}
+</script>
+
+
+
+</head>
+<body>
+
+    <button onclick="AlertFun()">AlertButton</button>
+        
+    <button type="button" onclick="BGChange('yellow');">Change BG</button>
+
+    <button type="button" onclick="TextChange();">ChangeText</button>
+    <p id="text1">Text</p>
+
+    <button type="button" id="close" onClick="javascript:window.close('','_parent','');">CloseButton</button> <!-- ეს ვერ გავაკეთე, არ მითიშავს არაფრით -->
+
+    <button onclick="myFunction()">Task3</button>
+
+    <p id="num1"></p>
+    
+    
+
+</body>
+</html>
+
